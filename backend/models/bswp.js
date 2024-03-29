@@ -11,5 +11,5 @@ const bswp = new mongoose.Schema({
     marketcap: String
 });
 
-const bswpData = mongoose.model('bswp', bswp);
+const bswpData = mongoose.model('bswpData', bswp);
 module.exports = bswpData;

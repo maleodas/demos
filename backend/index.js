@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const bswp = require('./routes/bswp');
+const bswpBlocks = require('./routes/bswp_blocks');
+const bswpTransaction = require('./routes/bswp_transaction');
+const dashboard = require('./routes/dashbord');
 let bodyParser = require('body-parser');
 
 app.get('/', (req, res) => {
@@ -18,6 +21,9 @@ try {
 
 
 app.use('/', bswp);
+app.use('/', bswpBlocks);
+app.use('/', bswpTransaction);
+app.use('/dasboard', dashboard);
 
 
 
