@@ -1,0 +1,46 @@
+@import "./variable";
+@import "./gobal.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-family;
+    background-color: $mainBgColor;
+    color: $primarytext;
+    padding: 0 200px;
+    .custom-table{
+        color: $primarytext;
+        caption{
+            font-size: 30px;
+            color: $primarytext;
+            padding-bottom: 40px;
+        }
+        tbody>tr:nth-child(odd)>td,tbody>tr:nth-child(odd)>th {
+            background-color: #1d1d1d; 
+        }
+        tbody{
+            tr{
+                font-size: 13px;
+                padding-top: 10px;
+                th{
+                    font-size: 13px;
+                    padding-top: 10px;
+                    padding-left: 20px;
+                    border: none;
+                    width: 30%;
+                }
+                td{
+                    font-weight: bold;
+                    border: none;
+                    width: 70%;
+                }
+                .text-yellow{
+                    color: $secondarytext;
+                }
+            }
+        }
+        
+    }
+}

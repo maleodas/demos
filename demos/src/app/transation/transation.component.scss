@@ -1,0 +1,67 @@
+@import "../variable.scss";
+body{
+    font-family: $font-family;
+    background-color: $mainBgColor;
+    color: $primarytext;
+    padding: 0 200px;
+    .caption{
+        .table-head{
+            font-size: 30px;
+            color: $primarytext;
+        }
+        button{
+            color: white;
+            height: 35px;
+            background-color: $secondarytext;
+            padding: 0 20px;
+            
+        }
+        .btn{
+            &:active{
+                background-color: $secondarytext;
+                border: none;
+            }
+            &:hover{
+                background-color: $secondarytext;
+            }
+        }
+    }
+    .page1{
+        color: $primarytext;
+        tbody>tr:nth-child(odd)>td,tbody>tr:nth-child(odd)>th {
+            background-color: #1d1d1d; 
+        }
+        tbody{
+            tr{
+                font-size: 13px;
+                padding-top: 10px;
+                th{
+                    font-size: 13px;
+                    padding-left: 20px;
+                    border: none;
+                }
+                td{
+                    font-weight: bold;
+                    border: none;
+                    .fa-leaf{
+                        color: $leafcolor;
+                        padding-right: 10px;
+                    }
+                }
+                .yellow-text{
+                    color: $secondarytext;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    body{
+        padding: 0 50px !important;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        padding: 0 10px !important;
+    }
+}
