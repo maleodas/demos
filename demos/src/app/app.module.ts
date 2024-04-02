@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BswpTransationComponent } from './bswp-transation/bswp-transation.component';
 import { BswpBlocksComponent } from './bswp-blocks/bswp-blocks.component';
 import { BitcoinSwapComponent } from './bitcoin-swap/bitcoin-swap.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { BitcoinSwapComponent } from './bitcoin-swap/bitcoin-swap.component';
     AppComponent,
     BswpTransationComponent,
     BswpBlocksComponent,
-    BitcoinSwapComponent
+    BitcoinSwapComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
