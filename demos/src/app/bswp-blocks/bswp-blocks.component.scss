@@ -1,0 +1,47 @@
+@import "/src/styles.scss";
+
+.main_body{
+    font-family: $font-family;
+    background-color: $mainBgColor;
+    color: $primarytext;
+    padding: 0 200px;
+    .custom-table{
+        color: $primarytext;
+        tbody>tr:nth-child(odd)>td,tbody>tr:nth-child(odd)>th {
+            background-color: #000; 
+        }
+        tbody>tr:nth-child(even)>td,tbody>tr:nth-child(even)>th {
+            background-color: $mainBgColor; 
+        }
+        caption{
+            font-size: 30px;
+            color: $primarytext;
+            padding-bottom: 40px;
+        }
+        tbody{
+            tr{
+                font-size: 13px;
+                padding-top: 10px;
+                th{
+                    color: $primarytext;
+                    font-size: 13px;
+                    padding-top: 10px;
+                    padding-left: 20px;
+                    border: none;
+                    width: 30%;
+                }
+                td{
+                    color: $primarytext;
+                    font-weight: bold;
+                    border: none;
+                    width: 70%;
+                }
+                .text-yellow{
+                    color: $secondarytext;
+                }
+            }
+        }
+        
+    }
+}
+    
