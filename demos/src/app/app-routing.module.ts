@@ -6,22 +6,7 @@ import { BswpBlocksComponent } from './bswp-blocks/bswp-blocks.component';
 import { BitcoinSwapComponent } from './bitcoin-swap/bitcoin-swap.component';
 
 const routes: Routes = [
-  {
-  path: '',
-  component: TransationComponent
-},
-{
-  path:'bswp',
-  component:BswpTransationComponent
-},
-{
-  path:'block',
-  component:BswpBlocksComponent
-},
-{
-  path:'swap',
-  component:BitcoinSwapComponent
-}
+ 
 ];
 
 @NgModule({
